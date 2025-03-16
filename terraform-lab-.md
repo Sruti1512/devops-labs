@@ -1,4 +1,4 @@
-## Lab-5: Launching VPC and EC2 Instance 
+## Lab: Launching VPC and EC2 Instance 
 
 ### Task-1: Launching VPC and creating subnets
 ```
@@ -53,7 +53,7 @@ resource "aws_instance" "example" {
   # the public SSH key
   key_name = aws_key_pair.mykeypair.key_name
   tags = {
-    Name = "Yourname-Lab5-ec2"
+    Name = "Yourname-ec2"
   }
 }
 ```
