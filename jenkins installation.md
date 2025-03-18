@@ -52,3 +52,18 @@ sudo systemctl start jenkins
 ```
 sudo systemctl status jenkins
 ```
+### Task-3: Configure Jenkins Server:
+
+
+Get the **Initial Password** for Jenkins from the below path.
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+   (**Example:** "afbe8d33e25b4b908c0b9f91546f09e6")
+
+1. Now, go to the **Web Browser** and enter the Jenkins URL as shown: **http://< Jenkin's Public IP>:8080/**
+2. Under Unlock Jenkins, enter the above **initialAdminPassword** & click **Continue**.
+3. Click on **Install suggested Plugins** on the Customize Jenkins page.
+4. Once the plugins are installed, it gives you the page where you can create a New **Admin User**. 
+5. Enter the **User Id** and **Password** followed by **Name and E-Mail ID** then click on **Save & Continue**.
+6. In the next step, on the Instance Configuration Page, verify your **Jenkins Public IP** and **Port Number** then click on **Save and Finish**
